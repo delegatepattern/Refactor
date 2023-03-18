@@ -30,7 +30,10 @@ final class UserTests: XCTestCase {
     }
 
     func testAddMultipleFollowersToUser() {
-        let user = User(followers: followers)
+        var user = User()
+        user.addFollower(withNumber: followers[0].number)
+        user.addFollower(withNumber: followers[1].number)
+        user.addFollower(withNumber: followers[2].number)
         XCTAssertEqual(user.followers.count, 3)
         XCTAssertEqual(user.totalFollowers, 60)
     }

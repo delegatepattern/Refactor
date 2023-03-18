@@ -9,12 +9,16 @@ import Foundation
 
 // MARK: - Follower Type
 public struct Follower {
-    let number: Int
+    public let number: Int
 }
 
 // MARK: - User Type
 public struct User {
     private(set) public var followers: [Follower] = []
+
+    public init() {
+        followers = []
+    }
 
     public var totalFollowers: Int {
         var total = 0

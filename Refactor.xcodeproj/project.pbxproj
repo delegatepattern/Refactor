@@ -16,6 +16,7 @@
 		CE30219C29C5FA9C00369A58 /* RefactorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30219B29C5FA9C00369A58 /* RefactorUITestsLaunchTests.swift */; };
 		CE3021A929C5FAE900369A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3021A829C5FAE900369A58 /* User.swift */; };
 		CE3021AB29C5FB2F00369A58 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3021AA29C5FB2F00369A58 /* StateController.swift */; };
+		CE55949529C677250037960D /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = CE55949429C677250037960D /* Model */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55949529C677250037960D /* Model in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,7 @@
 				CE30218E29C5FA9C00369A58 /* RefactorTests */,
 				CE30219829C5FA9C00369A58 /* RefactorUITests */,
 				CE30217C29C5FA9B00369A58 /* Products */,
+				CE55949329C677250037960D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +138,13 @@
 			path = RefactorUITests;
 			sourceTree = "<group>";
 		};
+		CE55949329C677250037960D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +161,9 @@
 			dependencies = (
 			);
 			name = Refactor;
+			packageProductDependencies = (
+				CE55949429C677250037960D /* Model */,
+			);
 			productName = Refactor;
 			productReference = CE30217B29C5FA9B00369A58 /* Refactor.app */;
 			productType = "com.apple.product-type.application";
@@ -593,6 +606,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE55949429C677250037960D /* Model */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Model;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE30217329C5FA9B00369A58 /* Project object */;
 }
