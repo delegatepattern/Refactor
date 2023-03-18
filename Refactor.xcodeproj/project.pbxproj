@@ -48,6 +48,7 @@
 		CE30219B29C5FA9C00369A58 /* RefactorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CE3021A829C5FAE900369A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE3021AA29C5FB2F00369A58 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
+		CE3021AD29C6174900369A58 /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +79,7 @@
 		CE30217229C5FA9B00369A58 = {
 			isa = PBXGroup;
 			children = (
+				CE3021AD29C6174900369A58 /* Model */,
 				CE30217D29C5FA9B00369A58 /* Refactor */,
 				CE30218E29C5FA9C00369A58 /* RefactorTests */,
 				CE30219829C5FA9C00369A58 /* RefactorUITests */,
