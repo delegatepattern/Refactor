@@ -7,7 +7,7 @@ Let's take a quick look at this minimal SwiftUI app we'll use for this lesson:
 
 ## User - Model Type
 
-```
+```swift
 struct User {
   var followers: [Int] = []
 }
@@ -16,7 +16,7 @@ struct User {
 
 ## StateController - Global Shared Access
 
-```
+```swift
 class StateController: ObservableObject {
   @Published var user = User(followers:[10,20])
 }
@@ -25,7 +25,7 @@ class StateController: ObservableObject {
 
 ## RefactorAPP - Environment Object 
 
-```
+```swift
 struct RefactorApp: App {
   @StateObject var stateController = StateController()
   var body: some Scene {
@@ -42,7 +42,7 @@ Finally, let's add some logic to the ContentView:
 
 ## ContentView - Add Logic
 
-```
+```swift
 struct ContentView: View {
   @EnvironmentObject var stateController: StateController
 
@@ -109,7 +109,7 @@ _________________
 We can go ahead and refactor the **User** struct (it’s nothing but a simple model). The model layer is the easiest to work with. So let’s improve it together:
 </br>
 
-```
+```swift
 struct Follower {
   let number: Int
 }
@@ -194,7 +194,7 @@ It's time to add some sample complementary unit tests to our model types. Unit T
 The reason I'm showing you this is to encourage you to explore these powerful techniques and use them wisely in your own projects.  
 
 
- ```  
+ ```swift  
 import XCTest
 @testable import Model
 
@@ -306,7 +306,7 @@ I want to look at the 3 issues I listed above (Identify the Areas that Generate 
  Here is the final look of our User struct that acts as the Firebreak Type now:  
  
  
-```
+```swift
 import Model
 
 // MARK: - Firebreak Type - User - Mimicking the old API interface.
@@ -383,7 +383,7 @@ It’s time to update the **StateController**:
 
 ### StateController.swift:
 
-```
+```swift
 import SwiftUI
 import Model
 
@@ -409,7 +409,7 @@ Go back to the view layer and remove the wrapper type completely. This is the fi
 ### ContentView.swift:
 
 
-```
+```swift
 import SwiftUI
 import Model
 
