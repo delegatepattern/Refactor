@@ -6,16 +6,13 @@
 //
 
 import SwiftUI
+import Model
 
 struct ContentView: View {
     @EnvironmentObject var stateController: StateController
 
     var followers: Int {
-        var total = 0
-        for follower in stateController.user.followers {
-            total += follower
-        }
-        return total
+        stateController.user.totalFollowers
     }
 
     var body: some View {
@@ -23,7 +20,7 @@ struct ContentView: View {
             Text("Total followers: \(followers)")
                 .padding()
             Button("Add 10 more followers") {
-                stateController.user.followers.append(10)
+                stateController.user.addFollower(withNumber: 10)
             }
         }
     }
