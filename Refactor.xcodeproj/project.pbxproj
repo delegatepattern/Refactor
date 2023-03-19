@@ -14,7 +14,6 @@
 		CE30219029C5FA9C00369A58 /* RefactorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30218F29C5FA9C00369A58 /* RefactorTests.swift */; };
 		CE30219A29C5FA9C00369A58 /* RefactorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30219929C5FA9C00369A58 /* RefactorUITests.swift */; };
 		CE30219C29C5FA9C00369A58 /* RefactorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30219B29C5FA9C00369A58 /* RefactorUITestsLaunchTests.swift */; };
-		CE3021A929C5FAE900369A58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3021A829C5FAE900369A58 /* User.swift */; };
 		CE3021AB29C5FB2F00369A58 /* StateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3021AA29C5FB2F00369A58 /* StateController.swift */; };
 		CE55949529C677250037960D /* Model in Frameworks */ = {isa = PBXBuildFile; productRef = CE55949429C677250037960D /* Model */; };
 /* End PBXBuildFile section */
@@ -47,7 +46,6 @@
 		CE30219529C5FA9C00369A58 /* RefactorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RefactorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE30219929C5FA9C00369A58 /* RefactorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactorUITests.swift; sourceTree = "<group>"; };
 		CE30219B29C5FA9C00369A58 /* RefactorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CE3021A829C5FAE900369A58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE3021AA29C5FB2F00369A58 /* StateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateController.swift; sourceTree = "<group>"; };
 		CE3021AD29C6174900369A58 /* Model */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Model; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +101,6 @@
 		CE30217D29C5FA9B00369A58 /* Refactor */ = {
 			isa = PBXGroup;
 			children = (
-				CE3021A829C5FAE900369A58 /* User.swift */,
 				CE3021AA29C5FB2F00369A58 /* StateController.swift */,
 				CE30217E29C5FA9B00369A58 /* RefactorApp.swift */,
 				CE30218029C5FA9B00369A58 /* ContentView.swift */,
@@ -281,7 +278,6 @@
 				CE30218129C5FA9B00369A58 /* ContentView.swift in Sources */,
 				CE3021AB29C5FB2F00369A58 /* StateController.swift in Sources */,
 				CE30217F29C5FA9B00369A58 /* RefactorApp.swift in Sources */,
-				CE3021A929C5FAE900369A58 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
